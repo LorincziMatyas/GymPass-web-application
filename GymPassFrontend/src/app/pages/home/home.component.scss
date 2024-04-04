@@ -1,0 +1,89 @@
+.hero {
+  background-image: url("../../../assets/1.jpg");
+  background-size: cover;
+  color: #000000;
+  text-align: center;
+  padding: 100px 0;
+
+  .hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba($color: white, $alpha: 0.9);
+    padding: 20px;
+    border-radius: 10px;
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .cta-button {
+      padding: 15px 40px;
+      background-color: #ff5733;
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      font-size: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #ff8c66;
+      }
+    }
+  }
+}
+
+.features {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+
+    .feature {
+      text-align: center;
+
+      img {
+        width: 80px;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+
+      p {
+        color: #666;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.testimonial {
+  text-align: center;
+  padding: 50px 0;
+
+  .quote {
+    max-width: 600px;
+    margin: 0 auto;
+
+    p {
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    span {
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+}

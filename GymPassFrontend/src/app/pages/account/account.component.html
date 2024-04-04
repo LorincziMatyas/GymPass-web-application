@@ -1,0 +1,29 @@
+<section class="account">
+  <h1>My Account</h1>
+
+  <!-- Pass information -->
+  <div class="pass-info">
+    <h2>My Pass</h2>
+    <p><strong>Pass Type:</strong> {{ userPass.passType }}</p>
+    <p><strong>Expiration Date:</strong> {{ userPass.expirationDate }}</p>
+    <button class="change-pass-button" (click)="navToPasses()">
+      Change Pass
+    </button>
+  </div>
+
+  <!-- Account information -->
+  <div class="account-info">
+    <h2>Account Information</h2>
+    <p><strong>Name:</strong> {{ user.name }}</p>
+    <p><strong>Email:</strong> {{ user.email }}</p>
+    <button class="edit-account-button" (click)="openEditAccountDialog()">
+      Edit Account
+    </button>
+  </div>
+
+  <!-- Cart -->
+  <div class="cart">
+    <h2>My Cart</h2>
+    <!-- Display cart items here -->
+  </div>
+</section>

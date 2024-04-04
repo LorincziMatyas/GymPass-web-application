@@ -1,0 +1,6 @@
+@GymPassBackend_HostAddress = http://localhost:5101
+
+GET {{GymPassBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

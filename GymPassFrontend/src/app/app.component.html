@@ -1,0 +1,22 @@
+<header class="app-header">
+  <div class="container">
+    <h1 class="app-name">GymPass</h1>
+    <nav class="nav-links">
+      <!-- Navigation links for different routes -->
+
+      <a [routerLink]="['/home']" routerLinkActive="active">Home</a>
+      <a [routerLink]="['/activities']" routerLinkActive="router-link-active"
+        >Activities</a
+      >
+      <a [routerLink]="['/shop']" routerLinkActive="active">Shop</a>
+      <a [routerLink]="['/passes']" routerLinkActive="active">Passes</a>
+      <a [routerLink]="['/account']" routerLinkActive="active">Account</a>
+      <!-- Add more navigation links as needed -->
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Router outlet for displaying different components based on route -->
+  <router-outlet></router-outlet>
+</main>

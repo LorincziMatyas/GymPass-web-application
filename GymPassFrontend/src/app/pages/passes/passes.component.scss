@@ -1,0 +1,90 @@
+.passes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+  margin: 50px;
+
+  .pass {
+    position: relative; // Make the tooltip position relative to the pass
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: beige;
+    height: 20vh;
+
+    &:hover {
+      transform: translateY(-10px);
+      background-color: rgb(247, 247, 188);
+    }
+
+    &.active {
+      background-color: #ffd34f;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    &:hover::before {
+      content: "Click to select"; // Tooltip text
+      position: absolute;
+      top: -30px; // Adjust the distance from the top of the pass
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+  }
+}
+
+.pass-details {
+  text-align: center;
+  margin-top: 50px;
+
+  h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: #666;
+    margin-bottom: 20px;
+  }
+
+  .price {
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  .select-button {
+    padding: 15px 40px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+$bright-blue: #0000ff;
+$electric-violet-active: #d4a7fe;
+$electric-violet-hover: #ba70ff;
+$electric-violet: #8a2be2;
+$french-violet: #8806ce;
+$vivid-pink: #ff007f;
+$hot-red: #ff0000;
+$orange-red: #ff4500;
+$gray-900: #171717;
+$gray-700: #333333;
+$gray-400: #666666;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app-header {
+  background-color: $electric-violet; /* Green */
+  padding: 10px 0;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  //   border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-name {
+  margin: 0;
+  font-size: 24px;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: $electric-violet-hover; /* Darker Green */
+}
+
+.nav-links a.active {
+  background-color: $electric-violet-active; /* Dark Green */
+  color: black;
+}

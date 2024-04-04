@@ -1,0 +1,19 @@
+<section class="passes">
+  <div
+    class="pass"
+    *ngFor="let pass of passes"
+    [ngClass]="{ active: pass === selectedPass }"
+    (click)="selectPass(pass)"
+  >
+    <h2>{{ pass.name }}</h2>
+    <p>{{ pass.description }}</p>
+    <span class="price">{{ pass.price }}$</span>
+  </div>
+</section>
+
+<section class="pass-details" *ngIf="selectedPass">
+  <h2>{{ selectedPass.name }}</h2>
+  <p>{{ selectedPass.description }}</p>
+  <span class="price">{{ selectedPass.price | currency }}</span>
+  <button class="select-button">Buy Pass</button>
+</section>
